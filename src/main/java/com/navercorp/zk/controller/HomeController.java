@@ -54,7 +54,7 @@ public class HomeController {
 		ModelAndView mav = new ModelAndView("test");
 		mav.addObject("member", member);
 		
-		logger.info(mav.toString());
+		logger.info("HomeController#test " + mav.toString());
 		
 		return mav;
 	}
